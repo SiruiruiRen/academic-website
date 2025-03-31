@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Sirui Ren</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
+            <li><a href="personal.html">Personal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section content-section">
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            <div class="publications-content">
+                <div class="publications-container">
+                    <div class="publications-list">
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-content">
+                                <h3>Applying Large Language Models for Automated Coding of Self-Regulated Learning: A Theory-Informed Approach</h3>
+                                <p class="authors">Ren, S., Nguyen, H., Bernacki, M.L., & Yu, L.</p>
+                                <p class="venue">LAK Workshop on LLMs for Qualitative Analysis in Education</p>
+                                <div class="publication-tags">
+                                    <span>LLMs</span>
+                                    <span>Self-Regulated Learning</span>
+                                    <span>Educational Data Mining</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-content">
+                                <h3>Digital Self-Regulation: Intervention Effects on SRL Behaviors in Community College STEM Education</h3>
+                                <p class="authors">Ren, S., Bernacki, M.L., Greene, J.A., Ding, L., Windsor, E., & Hilpert, J.C.</p>
+                                <p class="venue">American Educational Research Association (AERA) Annual Meeting</p>
+                                <div class="publication-tags">
+                                    <span>Intervention</span>
+                                    <span>STEM Education</span>
+                                    <span>Community College</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2025</div>
+                            <div class="publication-content">
+                                <h3>Estimating Causal Moderation Effects with Binary Treatments and Continuous Moderators</h3>
+                                <p class="authors">Ren, S., Ge, P., & Dong, N.</p>
+                                <p class="venue">American Educational Research Association (AERA) Annual Meeting</p>
+                                <div class="publication-tags">
+                                    <span>Causal Inference</span>
+                                    <span>Statistical Methods</span>
+                                    <span>Moderation Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2024</div>
+                            <div class="publication-content">
+                                <h3>Adult vs. Traditional Learners: Motivational Profiles and Academic Outcomes</h3>
+                                <p class="authors">Ren, S., Bernacki, M.L., Dong, N., Greene, J.A., Ding, L., Windsor, E., & Hilpert, J.C.</p>
+                                <p class="venue">American Educational Research Association (AERA) Annual Meeting</p>
+                                <div class="publication-tags">
+                                    <span>Motivation</span>
+                                    <span>Adult Learning</span>
+                                    <span>Academic Outcomes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2024</div>
+                            <div class="publication-content">
+                                <h3>Embracing Complexity and Dynamism in Self-Regulated Learning: A Call for Methodological Realignment</h3>
+                                <p class="authors">Ren, S., Bernacki, M. & Greene, J.</p>
+                                <p class="venue">In preparation for Learning and Individual Differences</p>
+                                <div class="publication-tags">
+                                    <span>Methodology</span>
+                                    <span>SRL</span>
+                                    <span>Individual Differences</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <div class="publication-year">2023</div>
+                            <div class="publication-content">
+                                <h3>Differences in Beliefs, Values, Costs, and Achievement-Related Choices of Groups of Biology Learners</h3>
+                                <p class="authors">Bernacki, M.L., Berro, M.A., Ding, L., Ren, S., Webb, N., Greene, J.A., Windsor, E., & Hilpert, J.C.</p>
+                                <p class="venue">American Psychological Association Annual Meeting</p>
+                                <div class="publication-tags">
+                                    <span>Motivation</span>
+                                    <span>Biology Education</span>
+                                    <span>Achievement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sirui Ren. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add active class to current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

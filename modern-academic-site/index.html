@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirui Ren - Academic Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Single Page Home Section -->
+    <section id="home" class="fullpage-section">
+        <div class="fullpage-container">
+            <!-- Top Navigation -->
+            <nav class="top-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="Sirui Ren">
+                </div>
+                <h1>Sirui Ren</h1>
+                <p class="subtitle">PhD Student in Learning Science & Psychological Studies</p>
+                
+                <div class="social-links">
+                    <a href="mailto:rensirui@unc.edu"><i class="fas fa-envelope"></i></a>
+                    <a href="javascript:void(0)" title="Google Scholar - Coming Soon"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="javascript:void(0)" title="LinkedIn - Coming Soon"><i class="fab fa-linkedin"></i></a>
+                    <a href="javascript:void(0)" title="Twitter - Coming Soon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <!-- About Me Section (Centered Full Width) -->
+            <div class="about-box">
+                <h2>About Me</h2>
+                <div class="about-info">
+                    <p>Hi there! I'm a <span class="highlight">passionate researcher</span> exploring the fascinating intersection of <span class="highlight">self-regulated learning</span>, <span class="highlight">AI technologies</span>, and <span class="highlight">educational data science</span> at the University of North Carolina at Chapel Hill.</p>
+                    <p>My research journey combines <span class="highlight">rigorous methodological approaches</span> with a deep commitment to improving <span class="highlight">educational experiences</span>. I believe that by understanding how students learn and applying <span class="highlight">advanced analytics</span>, we can create more personalized and effective learning environments for everyone.</p>
+                    <p>My hobbies include reading scientific fiction and dancing. These activities help me maintain a creative mindset and work-life balance while pursuing my academic goals.</p>
+                </div>
+            </div>
+            
+            <!-- Education Section -->
+            <div class="education-box">
+                <h2>Education</h2>
+                <div class="education-items">
+                    <div class="education-item">
+                        <div class="education-degree">
+                            <p class="degree-title">PhD Student, Learning Science & Psychological Studies</p>
+                            <p class="degree-school">University of North Carolina at Chapel Hill</p>
+                        </div>
+                        <div class="education-location">
+                            <p>Chapel Hill, NC</p>
+                            <p class="education-date">09/2022-05/2027 (expected)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-degree">
+                            <p class="degree-title">Master's Program, Statistics and Operational Studies</p>
+                            <p class="degree-school">University of North Carolina at Chapel Hill</p>
+                        </div>
+                        <div class="education-location">
+                            <p>Chapel Hill, NC</p>
+                            <p class="education-date">08/2024-05/2026 (expected)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-degree">
+                            <p class="degree-title">Master's Degree, Psychology</p>
+                            <p class="degree-school">Tsinghua University</p>
+                        </div>
+                        <div class="education-location">
+                            <p>Beijing, China</p>
+                            <p class="education-date">09/2019-09/2022</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-degree">
+                            <p class="degree-title">Bachelor of Science, Psychology</p>
+                            <p class="degree-school">Tsinghua University</p>
+                        </div>
+                        <div class="education-location">
+                            <p>Beijing, China</p>
+                            <p class="education-date">08/2015-07/2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info (Bottom) -->
+            <div class="contact-box">
+                <h2>Contact</h2>
+                <div class="contact-info-compact">
+                    <div class="contact-item-compact">
+                        <i class="fas fa-envelope"></i>
+                        <p>rensirui@unc.edu</p>
+                    </div>
+                    <div class="contact-item-compact">
+                        <i class="fas fa-university"></i>
+                        <p>School of Education, UNC Chapel Hill</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add active class to current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

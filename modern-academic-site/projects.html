@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sirui Ren</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="personal.html">Personal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section content-section">
+        <div class="container">
+            <h2 class="section-title">Current Research Projects</h2>
+            <div class="projects-content">
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>LLM-Based Analysis of Self-Regulated Learning</h3>
+                            <p>Developing automated coding frameworks using Large Language Models to analyze student self-reflections and learning behaviors at scale, with a focus on maintaining theoretical fidelity and interpretability.</p>
+                            <div class="project-status">Ongoing</div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-image">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Digital Self-Regulation Interventions</h3>
+                            <p>Designing and evaluating digital tools that support community college STEM students in developing self-regulated learning strategies, with particular attention to how these interventions affect diverse student populations.</p>
+                            <div class="project-status">Funded by NSF</div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-image">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Advanced Causal Moderation Analysis</h3>
+                            <p>Developing new statistical approaches that combine inverse propensity score weighting with boosting algorithms to better estimate causal moderation effects with binary treatments and continuous moderators.</p>
+                            <div class="project-status">Manuscript in Preparation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sirui Ren. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add active class to current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

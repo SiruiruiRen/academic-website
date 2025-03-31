@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Sirui Ren</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="personal.html">Personal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <h2 class="section-title">Research Focus</h2>
+            <div class="research-content">
+                <div class="research-grid">
+                    <div class="research-item">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Self-regulated Learning</h3>
+                        <p class="research-question">"How do metacognitive processes dynamically adapt across diverse educational contexts, and what role do individual differences play in this adaptation?"</p>
+                        <p>Investigating how students develop, deploy, and refine <span class="highlight">self-regulation strategies</span> in digital learning environments, with particular attention to the complex interplay between cognitive, metacognitive, and motivational factors.</p>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI in Education</h3>
+                        <p class="research-question">"How can we leverage Large Language Models to analyze educational data at scale while maintaining theoretical integrity and pedagogical relevance?"</p>
+                        <p>Developing theoretically-grounded frameworks for using <span class="highlight">LLMs</span> to analyze complex educational data, including student reflections, learning behaviors, and interaction patterns, to create more responsive and personalized learning experiences.</p>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Learning Analytics</h3>
+                        <p class="research-question">"What temporal patterns of engagement predict successful learning outcomes, and how do these patterns vary across different learner populations?"</p>
+                        <p>Applying advanced <span class="highlight">data science methods</span> to identify meaningful patterns in educational data, focusing on time-based analytics and behavioral sequences that differentiate successful learning trajectories from less effective ones.</p>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Causal Methods</h3>
+                        <p class="research-question">"How can we develop more sensitive methodological approaches to detect heterogeneous treatment effects in educational interventions?"</p>
+                        <p>Advancing statistical methodologies for <span class="highlight">causal inference</span> in educational research, particularly developing novel approaches for examining moderation effects and heterogeneous treatment impacts across diverse student populations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sirui Ren. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add active class to current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
