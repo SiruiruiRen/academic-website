@@ -63,56 +63,34 @@ This template works well in all modern browsers including:
 - Safari
 - Edge
 
-## Deployment Instructions
+## Deployment
 
-### 1. Create a New GitHub Repository
+This site is deployed from the [SiruiruiRen/academic-website](https://github.com/SiruiruiRen/academic-website) repository via GitHub Pages, publishing from the `main` branch (root).
 
-1. Go to [GitHub](https://github.com/) and sign in to your account
-2. Click the "+" icon in the top right corner and select "New repository"
-3. Name your repository exactly: `siruiruiren.github.io` (replace "siruiruiren" with your GitHub username)
-4. Make sure the repository is set to "Public"
-5. Click "Create repository"
+Because the repository is **not** named `<username>.github.io`, GitHub Pages serves it under a project subpath rather than at the domain root:
 
-### 2. Upload the Website Files
+**Live site:** https://siruiruiren.github.io/academic-website/
 
-Once your repository is created, you need to upload these website files:
+`sitemap.xml` and `robots.txt` are already configured to point at this URL — if the repository is ever renamed or moved to a `<username>.github.io` repo (serving at the domain root instead), update both files' base URL to match.
 
-#### Option 1: Upload via GitHub Web Interface
-1. In your new repository, click "Add file" → "Upload files"
-2. Drag and drop all the files from this folder or click to browse and select them
-3. Click "Commit changes"
+### Making updates
 
-#### Option 2: Upload via Git Command Line
-1. Open Terminal/Command Prompt
-2. Navigate to the folder containing these website files
-3. Run the following commands:
+1. Edit the HTML/CSS files locally
+2. Commit and push to `main`:
 ```
-git init
-git add .
-git commit -m "Initial website setup"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
-git push -u origin main
+git add <changed files>
+git commit -m "Describe the change"
+git push origin main
 ```
-(Replace YOUR_USERNAME with your actual GitHub username)
+3. GitHub Pages rebuilds automatically within a minute or two
 
-### 3. Add Your Profile Photo
+### Enabling Pages on a fresh clone
 
-1. Add a photo named `profile.jpg` to your repository
-2. This should be a professional headshot or portrait photo
-3. Ideally, use a square photo with dimensions of at least 500x500 pixels
-
-### 4. Enable GitHub Pages
-
-1. In your repository, go to "Settings" (tab at the top)
-2. Scroll down to the "GitHub Pages" section
-3. Under "Source", select "main" branch
-4. Click "Save"
-
-### 5. Check Your Website
-
-After a few minutes, your website should be live at:
-`https://YOUR_USERNAME.github.io` (replace YOUR_USERNAME with your GitHub username)
+If setting this up on a new repository from scratch:
+1. Push the repository to GitHub
+2. Go to the repository's "Settings" → "Pages"
+3. Under "Source", select the `main` branch (root)
+4. Click "Save" — the site will be live shortly at the URL GitHub shows on that page
 
 ## Need Help?
 

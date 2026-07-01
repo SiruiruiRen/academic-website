@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siruiruiren.github.io/academic-website/sitemap.xml
