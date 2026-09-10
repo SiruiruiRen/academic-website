@@ -797,6 +797,7 @@ img {
 
 .publication-content {
     flex: 1;
+    min-width: 0;
 }
 
 .publication-content h3 {
@@ -820,6 +821,7 @@ img {
 
 .venue a {
     font-style: normal;
+    overflow-wrap: anywhere;
 }
 
 .publication-tags {
