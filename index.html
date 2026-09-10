@@ -22,26 +22,21 @@
     
     <!-- Existing stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <!-- Single Page Home Section -->
-    <section id="home" class="fullpage-section">
+    <nav class="top-nav" aria-label="Main navigation">
+        <a class="site-name" href="index.html">Sirui Ren</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="personal.html">Personal</a></li>
+        </ul>
+    </nav>
+    <main id="home" class="fullpage-section">
         <div class="fullpage-container">
-            <!-- Top Navigation -->
-            <nav class="top-nav">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="personal.html">Personal</a></li>
-                </ul>
-            </nav>
             
             <!-- Profile Section -->
             <div class="profile-section">
@@ -53,14 +48,12 @@
                 <p class="subtitle-sub">School of Education, University of North Carolina at Chapel Hill</p>
 
                 <div class="social-links">
-                    <a href="mailto:rensirui@unc.edu" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://scholar.google.com/citations?user=fmvuYZgAAAAJ&amp;hl=en" title="Google Scholar" aria-label="Sirui Ren on Google Scholar" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
-                    <a href="javascript:void(0)" title="LinkedIn - Coming Soon"><i class="fab fa-linkedin"></i></a>
-                    <a href="javascript:void(0)" title="CV - Coming Soon"><i class="fas fa-file-alt"></i></a>
+                    <a href="mailto:rensirui@unc.edu">Email</a>
+                    <a href="https://scholar.google.com/citations?user=fmvuYZgAAAAJ&amp;hl=en" title="Google Scholar" aria-label="Sirui Ren on Google Scholar" target="_blank" rel="noopener noreferrer">Google Scholar</a>
                 </div>
             </div>
 
-            <!-- About Me Section (Centered Full Width) -->
+            <!-- About Me -->
             <div class="about-box">
                 <h2>About Me</h2>
                 <div class="about-info">
@@ -161,7 +154,7 @@
                 <div class="contact-info-compact">
                     <div class="contact-item-compact">
                         <i class="fas fa-envelope"></i>
-                        <p>rensirui@unc.edu</p>
+                        <p><a href="mailto:rensirui@unc.edu">rensirui@unc.edu</a></p>
                     </div>
                     <div class="contact-item-compact">
                         <i class="fas fa-university"></i>
@@ -174,7 +167,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <script>
         // Add active class to current page

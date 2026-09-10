@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Sirui Ren</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Top Navigation -->
-    <nav class="top-nav">
+    <nav class="top-nav" aria-label="Main navigation">
+        <a class="site-name" href="index.html">Sirui Ren</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="personal.html">Personal</a></li>
         </ul>
     </nav>
 
     <!-- Projects Section -->
-    <section id="projects" class="section content-section">
+    <main id="projects" class="section content-section">
         <div class="container">
-            <h2 class="section-title">Current Research Projects</h2>
+            <h1 class="section-title">Current Research Projects</h1>
             <div class="projects-content">
                 <div class="projects-grid">
                     <div class="project-item">
@@ -31,7 +30,7 @@
                             <i class="fas fa-laptop-code"></i>
                         </div>
                         <div class="project-content">
-                            <h3>LLM-Based Coding of SRL Think-Aloud Protocols</h3>
+                            <h2>LLM-Based Coding of SRL Think-Aloud Protocols</h2>
                             <p>Automated coding frameworks that use large language models to code think-aloud protocol data on self-regulated learning, developed to preserve theoretical fidelity while scaling qualitative analysis.</p>
                             <div class="project-status">Invited Revision &middot; Journal of Learning Analytics</div>
                         </div>
@@ -41,7 +40,7 @@
                             <i class="fas fa-chalkboard-teacher"></i>
                         </div>
                         <div class="project-content">
-                            <h3>LLM Feedback for Teacher Professional Vision</h3>
+                            <h2>LLM Feedback for Teacher Professional Vision</h2>
                             <p>An international collaboration with the University of Tübingen (INFER Project) evaluating how prompting strategies shape LLM-generated feedback and pre-service teacher engagement with it.</p>
                             <div class="project-status">Accepted &middot; LAK '26</div>
                         </div>
@@ -51,7 +50,7 @@
                             <i class="fas fa-robot"></i>
                         </div>
                         <div class="project-content">
-                            <h3>AI-Based Self-Regulated Learning Chatbot</h3>
+                            <h2>AI-Based Self-Regulated Learning Chatbot</h2>
                             <p>Design of an AI-based chatbot for STEM learners built around autonomy, competence, and relatedness, aimed at promoting self-regulated learning through conversational support.</p>
                             <div class="project-status">Under Review &middot; IJETHE</div>
                         </div>
@@ -61,7 +60,7 @@
                             <i class="fas fa-calculator"></i>
                         </div>
                         <div class="project-content">
-                            <h3>Causal Moderation with Continuous Moderators</h3>
+                            <h2>Causal Moderation with Continuous Moderators</h2>
                             <p>A double-weighting approach for estimating causal moderation effects in observational studies with binary treatments and continuous moderators, extending propensity-score methods for heterogeneous treatment effects.</p>
                             <div class="project-status">Invited Revision &middot; JEBS</div>
                         </div>
@@ -71,7 +70,7 @@
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div class="project-content">
-                            <h3>Digital Self-Regulation Interventions in STEM</h3>
+                            <h2>Digital Self-Regulation Interventions in STEM</h2>
                             <p>Evaluating intervention effects on SRL behaviors and motivation among community college and university STEM students, and using survival analysis to model dropout risk from early course performance.</p>
                             <div class="project-status">Learning Analytics Center, UNC</div>
                         </div>
@@ -81,7 +80,7 @@
                             <i class="fas fa-brain"></i>
                         </div>
                         <div class="project-content">
-                            <h3>Resource-Intervention Match Framework</h3>
+                            <h2>Resource-Intervention Match Framework</h2>
                             <p>A framework explaining why self-regulated learning interventions have differential effects across learners, by modeling the match between learner resources and intervention design.</p>
                             <div class="project-status">Published &middot; Learning and Individual Differences (2026)</div>
                         </div>
@@ -89,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -112,4 +111,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
